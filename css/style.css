@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game-board {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 45px solid #236713;
+    background-image: linear-gradient(#15b1c8, #cee0e3);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.titulo {
+    position: absolute;
+    font-size: 5.5em;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: "Black Ops One", serif;
+    color: rgba(8, 8, 120, 0.8);
+    margin-top: 10vh;
+    margin-left: 30vw;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 10px;
+    animation: titulo-animation infinite 4s linear;
+}
+
+.game-over {
+    color: rgb(255, 0, 0);
+    font-size: 5.5em;
+    font-weight: 800;
+    font-family: "Press Start 2P", serif;
+    position: absolute;
+    text-align: center;
+    display: none;
+    text-align: center;
+    top: 50vh;
+    margin-left: 20vw;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 80px;
+    animation: none;
+    right: -80px;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    width: 500px;
+    margin-top: 50px;
+    position: absolute;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.iniciar, .reiniciar {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 80vh auto;
+}
+
+.reiniciar {
+    display: none;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    70% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes titulo-animation {
+    0% {
+        margin-top: 10vh;
+    }
+
+    30% {
+        margin-top: 15vh;
+    }
+
+    50% {
+        margin-top: 20vh;
+    }
+
+    70% {
+        margin-top: 15vh;
+    }
+
+    100% {
+        margin-top: 10vh;
+    }
+}
