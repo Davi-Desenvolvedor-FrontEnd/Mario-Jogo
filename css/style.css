@@ -17,29 +17,23 @@
     overflow: hidden;
 }
 
+
 .titulo {
     position: absolute;
-    font-size: 5.5em;
-    font-weight: 600;
-    font-style: oblique;
-    font-family: "Black Ops One", serif;
-    color: rgba(8, 8, 120, 0.8);
     margin-top: 10vh;
     margin-left: 30vw;
     display: block;
-    text-align: center;
+    height: 250px;
     text-shadow: 1px 1px 10px;
     animation: titulo-animation infinite 4s linear;
 }
 
 .game-over {
-    color: rgb(255, 0, 0);
-    font-size: 5.5em;
+    color: rgb(22, 8, 8);
+    font-size: 4.5em;
     font-weight: 800;
     font-family: "Press Start 2P", serif;
     position: absolute;
-    text-align: center;
-    display: none;
     text-align: center;
     top: 50vh;
     margin-left: 20vw;
